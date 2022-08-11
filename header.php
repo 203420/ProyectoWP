@@ -1,15 +1,15 @@
 <!DOCTYPE html>
 <html>
     <head>
-
         <?php wp_head();?>
-
+        <meta charset="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
     </head>
 <body <?php body_class();?> >
 
 <header>
     <div class="header-img">
-        LOGO
+        LOGO1
     </div>
     <div class="header-info">
         <?php wp_nav_menu (

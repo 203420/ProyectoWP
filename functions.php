@@ -7,10 +7,10 @@ function load_stylesheets(){
 add_action('wp_enqueue_scripts', 'load_stylesheets');
 
 function loadjs(){
-    wp_register_script('script', get_template_directory_uri() . '/script.js', '', 1, true);
-    wp_enqueue_script('script');
+    wp_register_script('scripts', get_template_directory_uri() . '/scripts.js', '', 1, true);
+    wp_enqueue_script('scripts');
 }
-//add_action('wp_enqueue_scripts', 'loadjs');
+add_action('wp_enqueue_scripts', 'loadjs');
 
 add_theme_support('menus');
 
